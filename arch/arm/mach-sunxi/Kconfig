@@ -7,6 +7,12 @@ config SPL_LDSCRIPT
 config IDENT_STRING
 	default " Allwinner Technology"
 
+config DRAM_SUNIV
+	bool
+	help
+	  Select this dram controller driver for Suniv platforms,
+	  like F1C100s/F1C200s/F1C600/R6.
+
 config DRAM_SUN4I
 	bool
 	help
@@ -204,6 +210,7 @@ choice
 config MACH_SUNIV
 	bool "suniv (Allwinner F1C100s/F1C200s/F1C600/R6)"
 	select CPU_ARM926EJS
+	select DRAM_SUNIV
 	select SUNXI_GEN_SUN6I
 	select SUPPORT_SPL
 

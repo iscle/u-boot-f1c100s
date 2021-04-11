@@ -30,7 +30,7 @@ obj-$(CONFIG_MACH_SUN9I)	+= clock_sun9i.o gtbus_sun9i.o
 obj-$(CONFIG_SUN50I_GEN_H6)	+= clock_sun50i_h6.o
 
 ifdef CONFIG_SPL_BUILD
-obj-$(CONFIG_MACH_SUNIV)	+= dram_suniv.o
+obj-$(CONFIG_DRAM_SUNIV)	+= dram_suniv.o
 obj-$(CONFIG_DRAM_SUN4I)	+= dram_sun4i.o
 obj-$(CONFIG_DRAM_SUN6I)	+= dram_sun6i.o
 obj-$(CONFIG_DRAM_SUN8I_A23)	+= dram_sun8i_a23.o
